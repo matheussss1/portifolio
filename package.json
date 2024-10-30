@@ -4,9 +4,9 @@
   "name": "portifolio",
   "scripts": {
     "dev": "next dev",
-    "lint": "next lint",
-    "start": "next start",
     "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "pages:build": "npx @cloudflare/next-on-pages"
   },
   "dependencies": {
