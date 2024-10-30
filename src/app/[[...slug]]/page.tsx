@@ -4,7 +4,7 @@ import { IconMarvee } from "@/components/icon-marvee";
 import { IconSci } from "@/components/icon-sci";
 import { JobCard } from "@/components/job-card";
 import Script from "next/script";
-
+export const runtime = "edge";
 export default function Home() {
   return (
     <div className="flex flex-col lg:max-w-screen-xl lg:mx-auto lg:flex-row ">
