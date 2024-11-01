@@ -3,6 +3,7 @@ import { IconLinkedin } from "@/components/icon-linkedin";
 import { IconMarvee } from "@/components/icon-marvee";
 import { IconSci } from "@/components/icon-sci";
 import { JobCard } from "@/components/job-card";
+import Image from "next/image";
 import Script from "next/script";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
     <div className="flex flex-col lg:max-w-screen-xl lg:mx-auto lg:flex-row ">
       <header className="flex flex-col py-12 gap-20 flex-1 lg:h-svh lg:sticky lg:top-0 px-4">
         <div className="flex flex-col gap-3">
-          <h1 className="text-4xl font-semibold">Matheus</h1>
+          <h1 className="text-4xl font-semibold">Matheus Carvalho</h1>
           <h2 className="text-lg font-medium">Software Engineer</h2>
           <p className="dark:text-zinc-400 text-zinc-700">
             I Build scalable, efficient, and secure software solutions.
@@ -60,6 +61,7 @@ export default function Home() {
           </h2>
           <div className="flex flex-col gap-4 px-4">
             <JobCard
+              duration="2024 — Present"
               companyIcon={<IconMarvee />}
               stack={[
                 "JavaScript",
@@ -74,7 +76,16 @@ export default function Home() {
               ]}
             />
             <JobCard
-              companyIcon={<IconSci />}
+              duration="2023 — Present"
+              companyIcon={
+                <Image
+                  src="/logo-plenor-dark.png"
+                  alt="plenor"
+                  width={40}
+                  height={40}
+                  className="h-full w-full block"
+                />
+              }
               stack={[
                 "JavaScript",
                 "NodeJs",
@@ -88,6 +99,45 @@ export default function Home() {
               ]}
             />
             <JobCard
+              companyIcon={<IconMarvee />}
+              duration="2023 — 2024"
+              stack={[
+                "JavaScript",
+                "NodeJs",
+                "ExpressJS",
+                "React",
+                "Next.js",
+                "PHP",
+                "Laravel",
+                "MySQL",
+                "Deployment",
+              ]}
+            />
+            <JobCard
+              duration="2022 — 2022"
+              companyIcon={
+                <Image
+                  src="/freelance.webp"
+                  alt="freelance"
+                  width={40}
+                  height={40}
+                  className="h-full w-full block"
+                />
+              }
+              stack={[
+                "JavaScript",
+                "NodeJs",
+                "ExpressJS",
+                "React",
+                "Next.js",
+                "PHP",
+                "Laravel",
+                "MySQL",
+                "Deployment",
+              ]}
+            />
+            <JobCard
+              duration="2021 — 2023"
               companyIcon={<IconSci />}
               stack={[
                 "JavaScript",
@@ -103,6 +153,7 @@ export default function Home() {
             />
             <div id="section1">
               <JobCard
+                duration="2020 — 2021"
                 companyIcon={<IconSci />}
                 stack={[
                   "JavaScript",

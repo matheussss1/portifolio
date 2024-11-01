@@ -3,6 +3,7 @@ import { ArrowUpRight } from "./icon-arrow-up-right";
 export function JobCard(props: {
   stack: string[];
   companyIcon: React.ReactNode;
+  duration: string;
 }) {
   return (
     <div className="flex gap-6 hover:bg-slate-500/20 p-2 rounded-md">
@@ -14,7 +15,7 @@ export function JobCard(props: {
                 {props.companyIcon}
               </div>
             </div>
-            <span className="text-sm">2022 — PRESENT</span>
+            <span className="text-sm">{props.duration}</span>
           </div>
           <div className="flex items-center">
             <h3 className="text-[#87abed] text-lg font-medium mr-1">
