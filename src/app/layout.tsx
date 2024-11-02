@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const inter = localFont({
-  src: "./fonts/Inter.ttf",
+const inter = Inter({
+  subsets: ["latin"],
   variable: "--font-inter",
-  weight: "100 900",
 });
 export const metadata: Metadata = {
   title: "Matheus Carvalho",
