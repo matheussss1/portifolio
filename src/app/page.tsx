@@ -8,14 +8,13 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex flex-col lg:max-w-screen-xl lg:mx-auto lg:flex-row ">
-      <header className="flex flex-col py-16 pb-12 gap-20 flex-1 lg:h-svh lg:sticky lg:top-0 px-4">
-        <img src="/profile.jpeg" className="block w-64 rounded-md" />
+      <header className="flex flex-col py-16 pb-12 gap-16 flex-1 lg:h-svh lg:sticky lg:top-0 px-4">
+        <img src="/profile.jpeg" className="block w-44 lg:w-64 rounded-md" />
         <div className="flex flex-col gap-3">
-          <h1 className="text-4xl font-semibold">Matheus Carvalho</h1>
-          <h2 className="text-lg font-medium">Software Engineer</h2>
-          <p className="dark:text-zinc-400 text-zinc-700">
-            I Build scalable, efficient, and secure software solutions.
-          </p>
+          <div className="flex flex-col gap-1">
+            <h1 className="text-4xl font-semibold">Matheus Carvalho</h1>
+            <h2 className="text-xl font-medium">Software Engineer</h2>
+          </div>
           <div className="flex gap-4 mt-4">
             <a href="#about" className="size-8">
               <IconLinkedin />
@@ -42,10 +41,12 @@ export default function Home() {
           <h2 className="text-sm uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
             About
           </h2>
-          <p className="px-4 text-gray-400">
-            <span className="text-white">Hi there! I'm Matheus Carvalho</span> -
-            a tech lead who found his passion in{" "}
-            <span className="text-white">
+          <p className="px-4 text-gray-300">
+            <span className="text-gray-100 font-semibold">
+              Hi there! I'm Matheus Carvalho
+            </span>{" "}
+            - a tech lead who found his passion in{" "}
+            <span className="text-gray-100 font-semibold">
               turning outdated systems into modern, scalable solutions.
             </span>{" "}
             My coding journey started with self-taught experiments, but quickly
@@ -56,37 +57,44 @@ export default function Home() {
             <span className="text-blue-400">React</span>,{" "}
             <span className="text-green-400">Node.js</span>, and{" "}
             <span className="text-orange-400">cloud technologies</span> to build{" "}
-            <span className="text-white">
+            <span className="text-gray-100 font-semibold">
               systems that actually make a difference.
             </span>
             <br />
             <br />
-            <span className="text-white">My proudest achievement?</span> Leading
-            the <span className="text-white">transformation at Marvee</span>,
-            where we turned a basic internal tool into a robust banking platform{" "}
-            <span className="text-white">serving hundreds of users</span>.
-            Nothing beats the feeling of seeing your code making{" "}
+            <span className="text-gray-100 font-semibold">
+              My proudest achievement?
+            </span>{" "}
+            Leading the{" "}
+            <span className="text-gray-100 font-semibold">
+              transformation at Marvee
+            </span>
+            , where we turned a basic internal tool into a robust banking
+            platform{" "}
+            <span className="text-gray-100 font-semibold">
+              serving hundreds of users
+            </span>
+            . Nothing beats the feeling of seeing your code making{" "}
             <span className="text-purple-300">people's work lives easier!</span>
             <br />
             <br />
             I'm that developer who gets excited about both{" "}
-            <span className="text-white">
+            <span className="text-gray-100 font-semibold">
               crafting clean <span className="text-blue-400">frontend</span>{" "}
               experiences and optimizing{" "}
               <span className="text-green-400">backend</span> performance.
             </span>{" "}
             DevOps? Count me in! I love the whole puzzle of making applications
-            not just work, but thrive at{" "}
-            <span className="text-orange-400">scale</span>.
+            not just work, but thrive at scale.
             <br />
             <br />
             When I'm not deep in code, you might find me sharing knowledge with
             aspiring developers -{" "}
-            <span className="text-white">
+            <span className="text-gray-100 font-semibold">
               teaching basics to newcomers
             </span>{" "}
             reminds me why I fell in love with programming in the first place.{" "}
-            <span className="text-white">
+            <span className="text-gray-100 font-semibold">
               Always up for learning something new or tackling an interesting
               challenge!
             </span>
