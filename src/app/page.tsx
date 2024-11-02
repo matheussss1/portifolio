@@ -4,6 +4,7 @@ import { IconMarvee } from "@/components/icon-marvee";
 import { IconSci } from "@/components/icon-sci";
 import { JobCard } from "@/components/job-card";
 import Image from "next/image";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -22,6 +23,21 @@ export default function Home() {
             <a href="" className="size-8">
               <IconGithub />
             </a>
+            <div>
+              <Script
+                type="text/javascript"
+                src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+                data-name="bmc-button"
+                data-slug="matheus.carvalho"
+                data-color="#213eb0"
+                data-emoji="☕"
+                data-font="Inter"
+                data-text="Buy me a coffee"
+                data-outline-color="#ffffff"
+                data-font-color="#ffffff"
+                data-coffee-color="#FFDD00"
+              />
+            </div>
           </div>
         </div>
         <nav className="flex-col gap-4 hidden lg:flex">
