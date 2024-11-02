@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${inter.variable} antialiased`}>
-        <Script src="/gradient.js" />
+        <Script src="/gradient.js" defer />
         {children}
       </body>
     </html>

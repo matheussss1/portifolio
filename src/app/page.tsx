@@ -10,7 +10,14 @@ export default function Home() {
     <div className="flex flex-col lg:max-w-screen-xl lg:mx-auto lg:flex-row ">
       <header className="flex flex-col py-8 pb-12 gap-12 flex-1 lg:h-svh lg:sticky lg:top-0 px-4">
         <div className="flex flex-col gap-12">
-          <img src="/profile.jpeg" className="block w-44 lg:w-64 rounded-md" />
+          <Image
+            loading="lazy"
+            src="/profile.jpeg"
+            alt="Profile picture"
+            className="block w-44 lg:w-64 rounded-md"
+            width={176}
+            height={176}
+          />
           <div className="flex flex-col gap-1">
             <h1 className="text-4xl font-semibold">Matheus Carvalho</h1>
             <h2 className="text-xl font-medium">Software Engineer</h2>
@@ -150,6 +157,7 @@ export default function Home() {
                   alt="plenor"
                   width={40}
                   height={40}
+                  loading="lazy"
                   className="h-full w-full block"
                 />
               }
@@ -196,6 +204,7 @@ export default function Home() {
                   alt="freelance"
                   width={40}
                   height={40}
+                  loading="lazy"
                   className="h-full w-full block"
                 />
               }
