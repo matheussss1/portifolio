@@ -42,7 +42,7 @@ export default function Home() {
           <h2 className="text-sm uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
             About
           </h2>
-          <p className="px-4 text-grey-400">
+          <p className="px-4 text-gray-400">
             <span className="text-white">Hi there! I'm Matheus Carvalho</span> -
             a tech lead who found his passion in{" "}
             <span className="text-white">
