@@ -48,7 +48,7 @@ export default function Home() {
       </header>
       <main className="flex flex-col flex-1 lg:py-16 gap-8">
         <div id="about">
-          <h2 className="text-sm uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
+          <h2 className="text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
             About
           </h2>
           <p className="px-4 text-gray-400">
@@ -111,11 +111,15 @@ export default function Home() {
           </p>
         </div>
         <div id="experience">
-          <h2 className="text-sm uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
+          <h2 className="mb-10 text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
             Experience
           </h2>
           <div className="flex flex-col gap-4 px-4">
             <JobCard
+              type="Remote"
+              level="Senior"
+              companyName="Marvee - Financeiro por Assinatura"
+              role="Tech Lead"
               duration="2024 — Present"
               companyIcon={<IconMarvee />}
               stack={[
@@ -131,6 +135,10 @@ export default function Home() {
               ]}
             />
             <JobCard
+              type="Remote"
+              level="Senior"
+              companyName="Plenor"
+              role="CTO"
               duration="2023 — Present"
               companyIcon={
                 <Image
@@ -154,6 +162,10 @@ export default function Home() {
               ]}
             />
             <JobCard
+              type="Remote"
+              role="Full Stack Software Engineer"
+              level="Mid"
+              companyName="Marvee - Financeiro por Assinatura"
               companyIcon={<IconMarvee />}
               duration="2023 — 2024"
               stack={[
@@ -169,6 +181,10 @@ export default function Home() {
               ]}
             />
             <JobCard
+              type="Remote"
+              role="Full Stack Developer"
+              level="Mid"
+              companyName="Freelance"
               duration="2022 — 2022"
               companyIcon={
                 <Image
@@ -192,6 +208,10 @@ export default function Home() {
               ]}
             />
             <JobCard
+              type="Hybrid"
+              role="Full Stack Developer"
+              level="Junior"
+              companyName="SCI - Sistemas Contábeis Integrados"
               duration="2021 — 2023"
               companyIcon={<IconSci />}
               stack={[
@@ -206,23 +226,25 @@ export default function Home() {
                 "Deployment",
               ]}
             />
-            <div id="section1">
-              <JobCard
-                duration="2020 — 2021"
-                companyIcon={<IconSci />}
-                stack={[
-                  "JavaScript",
-                  "NodeJs",
-                  "ExpressJS",
-                  "React",
-                  "Next.js",
-                  "PHP",
-                  "Laravel",
-                  "MySQL",
-                  "Deployment",
-                ]}
-              />
-            </div>
+            <JobCard
+              type="Hybrid"
+              level="Intern"
+              role="Full Stack Developer"
+              companyName="SCI - Sistemas Contábeis Integrados"
+              duration="2020 — 2021"
+              companyIcon={<IconSci />}
+              stack={[
+                "JavaScript",
+                "NodeJs",
+                "ExpressJS",
+                "React",
+                "Next.js",
+                "PHP",
+                "Laravel",
+                "MySQL",
+                "Deployment",
+              ]}
+            />
           </div>
         </div>
       </main>
