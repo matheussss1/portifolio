@@ -5,26 +5,13 @@
 :root {
   --gradient-x: 300px;
   --gradient-y: 150px;
-
-  --background: #d5d5d5;
+  --background: #0f0f0f;
   --background-gradient: radial-gradient(
     900px at var(--gradient-x) var(--gradient-y),
-    rgba(70, 85, 131, 0.15),
+    rgba(58, 58, 59, 0.5),
     transparent 80%
   );
-  --foreground: #05153c;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f0f0f;
-    --background-gradient: radial-gradient(
-      900px at var(--gradient-x) var(--gradient-y),
-      rgba(58, 58, 59, 0.4),
-      transparent 80%
-    );
-    --foreground: #ededed;
-  }
+  --foreground: #ededed;
 }
 
 * {
