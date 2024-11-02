@@ -27,7 +27,7 @@ export function JobCard(props: {
                 <span>{props.role}</span>
                 <span className="text-xs">·</span>
                 {props.level}
-                <span className="hidden sm:inline">•</span>
+                <span>•</span>
                 {props.type}
                 <ArrowUpRight />
               </div>

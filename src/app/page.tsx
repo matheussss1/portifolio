@@ -8,9 +8,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex flex-col lg:max-w-screen-xl lg:mx-auto lg:flex-row ">
-      <header className="flex flex-col py-16 pb-12 gap-12 flex-1 lg:h-svh lg:sticky lg:top-0 px-4">
-        <img src="/profile.jpeg" className="block w-44 lg:w-64 rounded-md" />
-        <div className="flex flex-col gap-2">
+      <header className="flex flex-col py-8 pb-12 gap-12 flex-1 lg:h-svh lg:sticky lg:top-0 px-4">
+        <div className="flex flex-col gap-12">
+          <img src="/profile.jpeg" className="block w-44 lg:w-64 rounded-md" />
           <div className="flex flex-col gap-1">
             <h1 className="text-4xl font-semibold">Matheus Carvalho</h1>
             <h2 className="text-xl font-medium">Software Engineer</h2>
@@ -46,7 +46,7 @@ export default function Home() {
           </a>
         </nav>
       </header>
-      <main className="flex flex-col flex-1 lg:py-16 gap-8">
+      <main className="flex flex-col flex-1 lg:py-8 gap-12">
         <div id="about">
           <h2 className="text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
             About
@@ -110,11 +110,12 @@ export default function Home() {
             </span>
           </p>
         </div>
+        <hr className="border-gray-300 dark:border-gray-400/35 w-1/2 mx-auto hidden lg:block" />
         <div id="experience">
           <h2 className="mb-10 text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
             Experience
           </h2>
-          <div className="flex flex-col gap-4 px-4">
+          <div className="flex flex-col gap-12 px-4">
             <JobCard
               type="Remote"
               level="Senior"
