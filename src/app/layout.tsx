@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -10,11 +10,6 @@ const inter = localFont({
 export const metadata: Metadata = {
   title: "Matheus Carvalho",
   description: "Software Engineer",
-};
-export const viewport: Viewport = {
-  initialScale: 1,
-  viewportFit: "cover",
-  width: "device-width",
 };
 
 export default function RootLayout({
