@@ -26,17 +26,25 @@ export default function Home() {
             <div className="flex gap-4 mt-4 items-center">
               <a
                 href="https://www.linkedin.com/in/matheus-f-carvalho/"
+                target="_blank"
+                aria-label="Linkedin"
                 className="size-8"
               >
                 <IconLinkedin />
               </a>
-              <a href="https://github.com/matheussss1" className="size-8">
+              <a
+                href="https://github.com/matheussss1"
+                aria-label="Github"
+                target="_blank"
+                className="size-8"
+              >
                 <IconGithub />
               </a>
             </div>
             <a
               href="https://www.buymeacoffee.com/matheus.carvalho"
               target="_blank"
+              aria-label="Buy me a coffee"
               className="w-max flex items-center gap-2 bg-gray-300/25 px-3 py-1.5 rounded-lg text-md font-semibold"
             >
               <span className="text-xl">☕</span>
