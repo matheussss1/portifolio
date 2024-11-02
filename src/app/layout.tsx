@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   title: "Matheus Carvalho",
   description: "Software Engineer",
 };
+export const viewport: Viewport = {
+  initialScale: 1,
+  viewportFit: "cover",
+  width: "device-width",
+};
 
 export default function RootLayout({
   children,
@@ -19,10 +24,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-      />
       <body className={`${inter.variable} antialiased`}>{children}</body>
     </html>
   );
