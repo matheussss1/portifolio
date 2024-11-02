@@ -17,10 +17,13 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-3">
             <div className="flex gap-4 mt-4 items-center">
-              <a href="#about" className="size-8">
+              <a
+                href="https://www.linkedin.com/in/matheus-f-carvalho/"
+                className="size-8"
+              >
                 <IconLinkedin />
               </a>
-              <a href="" className="size-8">
+              <a href="https://github.com/matheussss1" className="size-8">
                 <IconGithub />
               </a>
             </div>
@@ -112,7 +115,7 @@ export default function Home() {
         </div>
         <hr className="border-gray-300 dark:border-gray-400/35 w-1/2 mx-auto hidden lg:block" />
         <div id="experience">
-          <h2 className="mb-10 text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
+          <h2 className="text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
             Experience
           </h2>
           <div className="flex flex-col gap-12 px-4">
