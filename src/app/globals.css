@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --gradient-x: 450px;
-  --gradient-y: 400px;
+  --gradient-x: 300px;
+  --gradient-y: 150px;
 
   --background: #d5d5d5;
   --background-gradient: radial-gradient(
-    50svw at var(--gradient-x) var(--gradient-y),
+    900px at var(--gradient-x) var(--gradient-y),
     rgba(70, 85, 131, 0.15),
     transparent 80%
   );
@@ -17,10 +17,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a132b;
+    --background: #0f0f0f;
     --background-gradient: radial-gradient(
-      50svw at var(--gradient-x) var(--gradient-y),
-      rgba(70, 85, 131, 0.15),
+      900px at var(--gradient-x) var(--gradient-y),
+      rgba(58, 58, 59, 0.4),
       transparent 80%
     );
     --foreground: #ededed;

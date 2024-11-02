@@ -4,12 +4,12 @@ import { IconMarvee } from "@/components/icon-marvee";
 import { IconSci } from "@/components/icon-sci";
 import { JobCard } from "@/components/job-card";
 import Image from "next/image";
-import Script from "next/script";
 
 export default function Home() {
   return (
     <div className="flex flex-col lg:max-w-screen-xl lg:mx-auto lg:flex-row ">
-      <header className="flex flex-col py-12 gap-20 flex-1 lg:h-svh lg:sticky lg:top-0 px-4">
+      <header className="flex flex-col py-16 pb-12 gap-20 flex-1 lg:h-svh lg:sticky lg:top-0 px-4">
+        <img src="/profile.jpeg" className="block w-64 rounded-md" />
         <div className="flex flex-col gap-3">
           <h1 className="text-4xl font-semibold">Matheus Carvalho</h1>
           <h2 className="text-lg font-medium">Software Engineer</h2>
@@ -37,7 +37,7 @@ export default function Home() {
           </a>
         </nav>
       </header>
-      <main className="flex flex-col flex-1 py-12 gap-8">
+      <main className="flex flex-col flex-1 lg:py-16 gap-8">
         <div id="about">
           <h2 className="text-sm uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
             About
@@ -209,7 +209,6 @@ export default function Home() {
         </div>
       </main>
       <footer></footer>
-      <Script src="gradient.js" />
     </div>
   );
 }
