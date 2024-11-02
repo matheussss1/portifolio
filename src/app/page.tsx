@@ -51,12 +51,12 @@ export default function Home() {
           <h2 className="text-sm uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
             About
           </h2>
-          <p className="px-4 text-gray-300">
-            <span className="text-gray-100 font-semibold">
+          <p className="px-4 text-gray-400">
+            <span className="text-gray-200 font-semibold">
               Hi there! I'm Matheus Carvalho
             </span>{" "}
             - a tech lead who found his passion in{" "}
-            <span className="text-gray-100 font-semibold">
+            <span className="text-gray-200 font-semibold">
               turning outdated systems into modern, scalable solutions.
             </span>{" "}
             My coding journey started with self-taught experiments, but quickly
@@ -67,21 +67,21 @@ export default function Home() {
             <span className="text-blue-400">React</span>,{" "}
             <span className="text-green-400">Node.js</span>, and{" "}
             <span className="text-orange-400">cloud technologies</span> to build{" "}
-            <span className="text-gray-100 font-semibold">
+            <span className="text-gray-200 font-semibold">
               systems that actually make a difference.
             </span>
             <br />
             <br />
-            <span className="text-gray-100 font-semibold">
+            <span className="text-gray-200 font-semibold">
               My proudest achievement?
             </span>{" "}
             Leading the{" "}
-            <span className="text-gray-100 font-semibold">
+            <span className="text-gray-200 font-semibold">
               transformation at Marvee
             </span>
             , where we turned a basic internal tool into a robust banking
             platform{" "}
-            <span className="text-gray-100 font-semibold">
+            <span className="text-gray-200 font-semibold">
               serving hundreds of users
             </span>
             . Nothing beats the feeling of seeing your code making{" "}
@@ -89,7 +89,7 @@ export default function Home() {
             <br />
             <br />
             I'm that developer who gets excited about both{" "}
-            <span className="text-gray-100 font-semibold">
+            <span className="text-gray-200 font-semibold">
               crafting clean <span className="text-blue-400">frontend</span>{" "}
               experiences and optimizing{" "}
               <span className="text-green-400">backend</span> performance.
@@ -100,11 +100,11 @@ export default function Home() {
             <br />
             When I'm not deep in code, you might find me sharing knowledge with
             aspiring developers -{" "}
-            <span className="text-gray-100 font-semibold">
+            <span className="text-gray-200 font-semibold">
               teaching basics to newcomers
             </span>{" "}
             reminds me why I fell in love with programming in the first place.{" "}
-            <span className="text-gray-100 font-semibold">
+            <span className="text-gray-200 font-semibold">
               Always up for learning something new or tackling an interesting
               challenge!
             </span>
