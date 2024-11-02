@@ -11,7 +11,7 @@ export default function Home() {
         <div className="flex flex-col gap-12">
           <Image
             loading="lazy"
-            src="/profile.jpeg"
+            src="/profile.webp"
             alt="Profile picture"
             className="block w-44 lg:w-64 rounded-md"
             width={176}
