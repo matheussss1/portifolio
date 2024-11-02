@@ -64,7 +64,7 @@ export default function Home() {
           </a>
         </nav>
       </header>
-      <main className="flex flex-col flex-1 lg:py-8 gap-12">
+      <main className="flex flex-col flex-1 lg:py-8 gap-12 min-h-96">
         <div id="about">
           <h2 className="text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
             About
