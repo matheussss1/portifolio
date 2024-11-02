@@ -4,40 +4,34 @@ import { IconMarvee } from "@/components/icon-marvee";
 import { IconSci } from "@/components/icon-sci";
 import { JobCard } from "@/components/job-card";
 import Image from "next/image";
-import Script from "next/script";
 
 export default function Home() {
   return (
     <div className="flex flex-col lg:max-w-screen-xl lg:mx-auto lg:flex-row ">
-      <header className="flex flex-col py-16 pb-12 gap-16 flex-1 lg:h-svh lg:sticky lg:top-0 px-4">
+      <header className="flex flex-col py-16 pb-12 gap-12 flex-1 lg:h-svh lg:sticky lg:top-0 px-4">
         <img src="/profile.jpeg" className="block w-44 lg:w-64 rounded-md" />
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2">
           <div className="flex flex-col gap-1">
             <h1 className="text-4xl font-semibold">Matheus Carvalho</h1>
             <h2 className="text-xl font-medium">Software Engineer</h2>
           </div>
-          <div className="flex gap-4 mt-4">
-            <a href="#about" className="size-8">
-              <IconLinkedin />
-            </a>
-            <a href="" className="size-8">
-              <IconGithub />
-            </a>
-            <div>
-              <Script
-                type="text/javascript"
-                src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-                data-name="bmc-button"
-                data-slug="matheus.carvalho"
-                data-color="#213eb0"
-                data-emoji="☕"
-                data-font="Inter"
-                data-text="Buy me a coffee"
-                data-outline-color="#ffffff"
-                data-font-color="#ffffff"
-                data-coffee-color="#FFDD00"
-              />
+          <div className="flex flex-col gap-3">
+            <div className="flex gap-4 mt-4 items-center">
+              <a href="#about" className="size-8">
+                <IconLinkedin />
+              </a>
+              <a href="" className="size-8">
+                <IconGithub />
+              </a>
             </div>
+            <a
+              href="https://www.buymeacoffee.com/matheus.carvalho"
+              target="_blank"
+              className="w-max flex items-center gap-2 bg-gray-300/25 px-3 py-1.5 rounded-lg text-md font-semibold"
+            >
+              <span className="text-xl">☕</span>
+              <span>Buy me a coffee</span>
+            </a>
           </div>
         </div>
         <nav className="flex-col gap-4 hidden lg:flex">
