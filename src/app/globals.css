@@ -32,7 +32,3 @@ body {
   font-family: Inter, sans-serif;
   min-height: 100svh;
 }
-
-#about {
-  content-visibility: auto;
-}
