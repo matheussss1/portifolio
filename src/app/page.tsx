@@ -1,7 +1,6 @@
 import { IconGithub } from "@/components/icon-github";
 import { IconLinkedin } from "@/components/icon-linkedin";
-import { IconMarvee } from "@/components/icon-marvee";
-import { IconSci } from "@/components/icon-sci";
+
 import { JobCard } from "@/components/job-card";
 import Image from "next/image";
 
@@ -140,7 +139,14 @@ export default function Home() {
               companyName="Marvee - Financeiro por Assinatura"
               role="Tech Lead"
               duration="2024 — Present"
-              companyIcon={<IconMarvee />}
+              companyIcon={
+                <Image
+                  src="/marvee-icon.webp"
+                  alt="Marvee - Financeiro por Assinatura"
+                  width={58}
+                  height={58}
+                />
+              }
               stack={[
                 "JavaScript",
                 "NodeJs",
@@ -161,10 +167,10 @@ export default function Home() {
               duration="2023 — Present"
               companyIcon={
                 <Image
-                  src="/logo-plenor-dark.png"
-                  alt="plenor"
-                  width={40}
-                  height={40}
+                  src="/plenor-icon.webp"
+                  alt="Plenor"
+                  width={48}
+                  height={48}
                   loading="lazy"
                   className="h-full w-full block"
                 />
@@ -186,7 +192,14 @@ export default function Home() {
               role="Full Stack Software Engineer"
               level="Mid"
               companyName="Marvee - Financeiro por Assinatura"
-              companyIcon={<IconMarvee />}
+              companyIcon={
+                <Image
+                  src="/marvee-icon.webp"
+                  alt="Marvee - Financeiro por Assinatura"
+                  width={58}
+                  height={58}
+                />
+              }
               duration="2023 — 2024"
               stack={[
                 "JavaScript",
@@ -210,8 +223,8 @@ export default function Home() {
                 <Image
                   src="/freelance.webp"
                   alt="freelance"
-                  width={40}
-                  height={40}
+                  width={58}
+                  height={58}
                   loading="lazy"
                   className="h-full w-full block"
                 />
@@ -234,7 +247,16 @@ export default function Home() {
               level="Junior"
               companyName="SCI - Sistemas Contábeis Integrados"
               duration="2021 — 2023"
-              companyIcon={<IconSci />}
+              companyIcon={
+                <Image
+                  src="/sci-icon.webp"
+                  alt="SCI - Sistemas Contábeis Integrados"
+                  width={58}
+                  height={58}
+                  loading="lazy"
+                  className="h-full w-full block"
+                />
+              }
               stack={[
                 "JavaScript",
                 "NodeJs",
@@ -253,7 +275,16 @@ export default function Home() {
               role="Full Stack Developer"
               companyName="SCI - Sistemas Contábeis Integrados"
               duration="2020 — 2021"
-              companyIcon={<IconSci />}
+              companyIcon={
+                <Image
+                  src="/sci-icon.webp"
+                  alt="SCI - Sistemas Contábeis Integrados"
+                  width={58}
+                  height={58}
+                  loading="lazy"
+                  className="h-full w-full block"
+                />
+              }
               stack={[
                 "JavaScript",
                 "NodeJs",
