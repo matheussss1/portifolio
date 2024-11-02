@@ -37,22 +37,59 @@ export default function Home() {
           </a>
         </nav>
       </header>
-      <main className="flex flex-col flex-1 py-12 gap-32">
+      <main className="flex flex-col flex-1 py-12 gap-8">
         <div id="about">
           <h2 className="text-sm uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
             About
           </h2>
-          <p className="px-4">
-            I’ve been crafting robust backend solutions since 2019, delivering
-            reliable and efficient solutions. Throughout my journey, I’ve had
-            the pleasure of serving 250+ happy clients worldwide, building
-            robust software for a leading telemedicine company, maintaining a
-            remote community platform, and tackling a variety of projects in PHP
-            and Node.js. In my leisure time, I enjoy creating browser extensions
-            and web applications, which have been used by thousands of users.
-            I’m passionate about my work and always up for new challenges. And
-            if you’re looking for someone to bring your project to life, I’m
-            available for hire —let’s make something great together!
+          <p className="px-4 text-[#94a3b8]">
+            <span className="text-white">Hi there! I'm Matheus Carvalho</span> -
+            a tech lead who found his passion in{" "}
+            <span className="text-white">
+              turning outdated systems into modern, scalable solutions.
+            </span>{" "}
+            My coding journey started with self-taught experiments, but quickly
+            evolved into something bigger than I imagined.
+            <br />
+            <br />
+            These days, I orchestrate a mix of{" "}
+            <span className="text-blue-400">React</span>,{" "}
+            <span className="text-green-400">Node.js</span>, and{" "}
+            <span className="text-orange-400">cloud technologies</span> to build{" "}
+            <span className="text-white">
+              systems that actually make a difference.
+            </span>
+            <br />
+            <br />
+            <span className="text-white">My proudest achievement?</span> Leading
+            the <span className="text-white">transformation at Marvee</span>,
+            where we turned a basic internal tool into a robust banking platform{" "}
+            <span className="text-white">serving hundreds of users</span>.
+            Nothing beats the feeling of seeing your code making{" "}
+            <span className="text-purple-300">people's work lives easier!</span>
+            <br />
+            <br />
+            I'm that developer who gets excited about both{" "}
+            <span className="text-white">
+              crafting clean <span className="text-blue-400">frontend</span>{" "}
+              experiences and optimizing{" "}
+              <span className="text-green-400">backend</span> performance.
+            </span>{" "}
+            DevOps? Count me in! I love the whole puzzle of making applications
+            not just work, but thrive at{" "}
+            <span className="text-orange-400">scale</span>.
+            <br />
+            <br />
+            When I'm not deep in code, you might find me sharing knowledge with
+            aspiring developers -{" "}
+            <span className="text-white">
+              teaching basics to newcomers
+            </span>{" "}
+            reminds me why I fell in love with programming in the first place.{" "}
+            <span className="text-white">
+              Always up for learning something new or tackling an interesting
+              challenge!
+            </span>
           </p>
         </div>
         <div id="experience">

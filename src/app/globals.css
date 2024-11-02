@@ -17,7 +17,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #05153c;
+    --background: #0a132b;
     --background-gradient: radial-gradient(
       50svw at var(--gradient-x) var(--gradient-y),
       rgba(70, 85, 131, 0.15),
