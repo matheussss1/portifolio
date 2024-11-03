@@ -5,6 +5,8 @@ import { JobCard } from "@/components/job-card";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
+export const runtime = 'edge';
+
 export default function Home() {
     const t = useTranslations();
 
