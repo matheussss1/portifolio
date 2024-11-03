@@ -11,11 +11,13 @@ export function ChangeLocale() {
     }
 
     return (
-        <select className="bg-transparent w-fit"
-            aria-label="Change language"
-            onChange={(e) => changeLocale(e.target.value)} value={pathname.split("/")[1]}>
-            <option value="en">🇺🇸 English</option>
-            <option value="br">🇧🇷 Português</option>
-        </select>
+        <label className="dropdown w-fit">
+            <select
+                aria-label="Change language"
+                onChange={(e) => changeLocale(e.target.value)} value={pathname.split("/")[1]}>
+                <option value="en">🇺🇸 English</option>
+                <option value="br">🇧🇷 Português</option>
+            </select>
+        </label>
     )
 }

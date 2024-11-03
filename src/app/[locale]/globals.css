@@ -36,3 +36,56 @@ body {
 select {
     background: rgba(0, 0, 0, 0.005);
 }
+
+label.dropdown select {
+	padding: 10px 42px 10px 10px;
+	background: transparent;
+	color: white;
+	border-radius: 0;
+    border: 1px solid rgb(109, 112, 118);
+    border-radius: 5px;
+	display: inline-block;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	outline: none;
+}
+label.dropdown select:-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 white;
+}
+label.dropdown select::-ms-expand {
+	display: none;
+}
+
+label.dropdown { position: relative; }
+label.dropdown:after {
+	content: '▼';
+	font: 8px Consolas, monospace;
+	color: white;
+	right: 3px;
+	top: 18px;
+	position: absolute;
+	pointer-events: none;
+	width: 34px;
+	padding: 0 0 5px 0;
+	text-indent: 14px;
+}
+@media screen\0 {
+	label.dropdown:after {
+		width: 38px;
+		text-indent: 15px;
+        right: 0;
+	}
+}
+@media screen and (min--moz-device-pixel-ratio:0) {
+	label.dropdown select { padding-right: 40px; }
+	label.dropdown:before { right: 6px; }
+	label.dropdown:after {
+		text-indent: 14px;
+		right: 3px;
+		top: 18px;
+		width: 36px;
+	}
+}
