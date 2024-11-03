@@ -3,6 +3,7 @@ import { IconLinkedin } from "@/components/icon-linkedin";
 
 import { JobCard } from "@/components/job-card";
 import Image from "next/image";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -39,6 +40,30 @@ export default function Home() {
               >
                 <IconGithub />
               </a>
+              <div
+                id="elevenlabs-audionative-widget"
+                data-height="90"
+                data-width="100%"
+                data-frameborder="no"
+                data-scrolling="no"
+                data-publicuserid="c0732b508505e5d24b81fc44947402498f7a1380ba80e109b89c1347b89d4b72"
+                data-playerurl="https://elevenlabs.io/player/index.html"
+              >
+                Loading the{" "}
+                <a
+                  href="https://elevenlabs.io/text-to-speech"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Elevenlabs Text to Speech
+                </a>{" "}
+                AudioNative Player...
+              </div>
+              <Script
+                strategy="lazyOnload"
+                src="https://elevenlabs.io/player/audioNativeHelper.js"
+                type="text/javascript"
+              />
             </div>
             <a
               href="https://www.buymeacoffee.com/matheus.carvalho"
