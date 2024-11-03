@@ -133,40 +133,34 @@ export default function Home() {
                 <hr className="border-gray-300 dark:border-gray-400/35 w-1/2 mx-auto hidden lg:block" />
                 <div id="experience">
                     <h2 className="text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
-                        Experience
+                        {t("experience.title")}
                     </h2>
                     <div className="flex flex-col gap-12 px-4">
                         <JobCard
-                            type="Remote"
-                            level="Senior"
-                            companyName="Marvee - Financeiro por Assinatura"
-                            role="Tech Lead"
-                            duration="2024 — Present"
+                            type={t("experience.job1.type")}
+                            level={t("experience.job1.level")}
+                            companyName={t("experience.job1.companyName")}
+                            role={t("experience.job1.role")}
+                            duration={t("experience.job1.duration")}
                             description={
                                 <>
-                                    Led a cross-functional team of 4 developers while maintaining
-                                    hands-on development responsibilities.
+                                    {t("experience.job1.description.1")}
                                     <br />
-                                    Spearheaded the implementation of robust banking integrations
-                                    and independently maintained the mobile application.
+                                    {t("experience.job1.description.2")}
                                     <br />
-                                    Orchestrated daily operations including sprint planning, code
-                                    reviews, and technical decision-making while collaborating
-                                    with CTO on strategic initiatives.
+                                    {t("experience.job1.description.3")}
                                     <br />
                                     <br />
-                                    <strong className="text-white">Key Contributions: </strong>
+                                    <strong className="text-white">{t("general.keyContributions")}: </strong>
                                     <ul>
                                         <li>
-                                            - Managed team efficiency through ClickUp implementation
-                                            and agile ceremonies
+                                            - {t("experience.job1.description.keyContributions.1")}
                                         </li>
                                         <li>
-                                            - Architected and implemented secure banking integration
-                                            systems
+                                            - {t("experience.job1.description.keyContributions.2")}
                                         </li>
                                         <li>
-                                            - Developed, launched and maintained mobile application
+                                            - {t("experience.job1.description.keyContributions.3")}
                                         </li>
                                     </ul>
                                 </>
@@ -174,7 +168,7 @@ export default function Home() {
                             companyIcon={
                                 <Image
                                     src="/marvee-icon.webp"
-                                    alt="Marvee - Financeiro por Assinatura"
+                                    alt={t("experience.job1.companyName")}
                                     width={58}
                                     height={58}
                                 />
@@ -182,38 +176,31 @@ export default function Home() {
                             stack={["ClickUp", "NodeJs", "AWS", "React", "Flutter", "N8N"]}
                         />
                         <JobCard
-                            type="Remote"
-                            role="Full Stack Software Engineer"
-                            level="Mid"
-                            companyName="Marvee - Financeiro por Assinatura"
+                            type={t("experience.job2.type")}
+                            level={t("experience.job2.level")}
+                            companyName={t("experience.job2.companyName")}
+                            role={t("experience.job2.role")}
+                            duration={t("experience.job2.duration")}
                             description={
                                 <>
-                                    Spearheaded the complete redesign and modernization of the
-                                    company's core platform, transforming a proof-of-concept MVP
-                                    into a scalable SaaS solution.
+                                    {t("experience.job2.description.1")}
                                     <br />
-                                    Led the successful migration of existing customers while
-                                    implementing modern development practices and infrastructure
-                                    improvements.
+                                    {t("experience.job2.description.2")}
                                     <br />
                                     <br />
-                                    <strong className="text-white">Key Achievements:</strong>
+                                    <strong className="text-white">{t("general.keyContributions")}:</strong>
                                     <ul>
                                         <li>
-                                            - Rebuilt core platform features with focus on
-                                            maintainability and scalability
+                                            - {t("experience.job2.description.keyContributions.1")}
                                         </li>
                                         <li>
-                                            - Scaled system capacity from 100 to 500+ users with zero
-                                            downtime
+                                            - {t("experience.job2.description.keyContributions.2")}
                                         </li>
                                         <li>
-                                            - Implemented CI/CD pipelines to ensure reliable
-                                            deployments
+                                            - {t("experience.job2.description.keyContributions.3")}
                                         </li>
                                         <li>
-                                            - Successfully transformed internal platform into a
-                                            customer-facing SaaS product
+                                            - {t("experience.job2.description.keyContributions.4")}
                                         </li>
                                     </ul>
                                 </>
@@ -221,12 +208,11 @@ export default function Home() {
                             companyIcon={
                                 <Image
                                     src="/marvee-icon.webp"
-                                    alt="Marvee - Financeiro por Assinatura"
+                                    alt={t("experience.job2.companyName")}
                                     width={58}
                                     height={58}
                                 />
                             }
-                            duration="2023 — Present"
                             stack={[
                                 "NodeJs",
                                 "React",
@@ -238,56 +224,45 @@ export default function Home() {
                             ]}
                         />
                         <JobCard
+                            type={t("experience.job3.type")}
+                            level={t("experience.job3.level")}
+                            companyName={t("experience.job3.companyName")}
+                            role={t("experience.job3.role")}
+                            duration={t("experience.job3.duration")}
                             description={
                                 <>
-                                    Led development and maintenance of multiple interconnected
-                                    systems including backoffice platform, customer-facing portal,
-                                    and mobile application for property management.
+                                    {t("experience.job3.description.1")}
                                     <br />
-                                    Mentored 30 interns while managing critical product features
-                                    and customer-centric solutions.
+                                    {t("experience.job3.description.2")}
                                     <br />
                                     <br />
-                                    <strong className="text-white">Key Achievements:</strong>
+                                    <strong className="text-white">{t("general.keyContributions")}:</strong>
                                     <ul>
                                         <li>
-                                            - Led development of property management features
-                                            including space scheduling, document management, and
-                                            notification systems
+                                            - {t("experience.job3.description.keyContributions.1")}
                                         </li>
                                         <li>
-                                            - Managed parallel development of web platforms and mobile
-                                            application
+                                            - {t("experience.job3.description.keyContributions.2")}
                                         </li>
                                         <li>
-                                            - Structured and delivered technical training program with
-                                            97% success rate
+                                            - {t("experience.job3.description.keyContributions.3")}
                                         </li>
                                         <li>
-                                            - Developed customer-focused problem-solving approach,
-                                            prioritizing end-user value in technical decisions
+                                            - {t("experience.job3.description.keyContributions.4")}
                                         </li>
                                         <li>
-                                            - Created curriculum based on industry-standard resources
-                                            like FreeCodeCamp, MDN, roadmap.sh
+                                            - {t("experience.job3.description.keyContributions.5")}
                                         </li>
                                         <li>
-                                            - Led interns through full-stack development journey from
-                                            programming basics to complete CRUD applications using PHP
-                                            and JavaScript
+                                            - {t("experience.job3.description.keyContributions.6")}
                                         </li>
                                     </ul>
                                 </>
                             }
-                            type="Hybrid"
-                            role="Full Stack Developer"
-                            level="Mid"
-                            companyName="SCI - Sistemas Contábeis Integrados"
-                            duration="2023 — 2023"
                             companyIcon={
                                 <Image
                                     src="/sci-icon.webp"
-                                    alt="SCI - Sistemas Contábeis Integrados"
+                                    alt={t("experience.job3.companyName")}
                                     width={58}
                                     height={58}
                                     loading="lazy"
@@ -308,40 +283,38 @@ export default function Home() {
                             ]}
                         />
                         <JobCard
+                            type={t("experience.job4.type")}
+                            level={t("experience.job4.level")}
+                            companyName={t("experience.job4.companyName")}
+                            role={t("experience.job4.role")}
+                            duration={t("experience.job4.duration")}
                             description={
                                 <>
-                                    Played a key role in the innovation sector, developing
-                                    new-generation legal and property management solutions.
+                                    {t("experience.job4.description.1")}
                                     <br />
-                                    Led development of a LGPD-compliant legal system with focus on
-                                    security and data protection.
+                                    {t("experience.job4.description.2")}
                                     <br />
-                                    Expanded technical expertise into mobile development while
-                                    building a comprehensive property management solution.
+                                    {t("experience.job4.description.3")}
                                     <br />
                                     <br />
-                                    <strong>Key Contributions:</strong>
+                                    <strong>{t("general.keyContributions")}:</strong>
                                     <ul>
                                         <li>
-                                            - Developed a comprehensive property management system
+                                            - {t("experience.job4.description.keyContributions.1")}
                                         </li>
-                                        <li>- Spearheaded development of a secure legal system</li>
                                         <li>
-                                            - Architected and launched a secure legal system MVP with
-                                            advanced encryption and hashing
+                                            - {t("experience.job4.description.keyContributions.2")}
+                                        </li>
+                                        <li>
+                                            - {t("experience.job4.description.keyContributions.3")}
                                         </li>
                                     </ul>
                                 </>
                             }
-                            type="Hybrid"
-                            role="Full Stack Developer"
-                            level="Junior"
-                            companyName="SCI - Sistemas Contábeis Integrados"
-                            duration="2021 — 2022"
                             companyIcon={
                                 <Image
                                     src="/sci-icon.webp"
-                                    alt="SCI - Sistemas Contábeis Integrados"
+                                    alt={t("experience.job4.companyName")}
                                     width={58}
                                     height={58}
                                     loading="lazy"
@@ -351,46 +324,39 @@ export default function Home() {
                             stack={["Python", "React", "AWS", "MySQL", "Docker", "GitLab"]}
                         />
                         <JobCard
-                            type="Hybrid"
+                            type={t("experience.job5.type")}
+                            level={t("experience.job5.level")}
+                            companyName={t("experience.job5.companyName")}
+                            role={t("experience.job5.role")}
+                            duration={t("experience.job5.duration")}
                             description={
                                 <>
-                                    Contributed to maintaining and enhancing a comprehensive
-                                    15-year-old intranet system serving critical business
-                                    functions.
+                                    {t("experience.job5.description.1")}
                                     <br />
-                                    Gained extensive experience working across various modules of
-                                    a mature enterprise system.
+                                    {t("experience.job5.description.2")}
                                     <br />
                                     <br />
-                                    <strong>Key Contributions:</strong>
+                                    <strong>{t("general.keyContributions")}:</strong>
                                     <ul>
                                         <li>
-                                            - Maintained and enhanced multiple system modules from
-                                            employee communication to customer reporting
+                                            - {t("experience.job5.description.keyContributions.1")}
                                         </li>
                                         <li>
-                                            - Developed solutions for both internal operations and
-                                            customer-facing reporting
+                                            - {t("experience.job5.description.keyContributions.2")}
                                         </li>
                                         <li>
-                                            - Collaborated within a small, high-performance team on
-                                            business-critical applications
+                                            - {t("experience.job5.description.keyContributions.3")}
                                         </li>
                                         <li>
-                                            - Rapidly acquired proficiency in legacy system
-                                            maintenance and enhancement
+                                            - {t("experience.job5.description.keyContributions.4")}
                                         </li>
                                     </ul>
                                 </>
                             }
-                            level="Intern"
-                            role="Full Stack Developer"
-                            companyName="SCI - Sistemas Contábeis Integrados"
-                            duration="2020 — 2021"
                             companyIcon={
                                 <Image
                                     src="/sci-icon.webp"
-                                    alt="SCI - Sistemas Contábeis Integrados"
+                                    alt={t("experience.job5.companyName")}
                                     width={58}
                                     height={58}
                                     loading="lazy"

@@ -1,8 +1,11 @@
 {
+    "general": {
+        "keyContributions": "Principais contribuições"
+    },
     "header": {
       "name": "Matheus Carvalho",
       "role": "Engenheiro de Software",
-      "buyMeCoffee": "Me compre um café",
+      "buyMeCoffee": "Me pague um café",
       "nav": {
         "about": "Sobre",
         "experience": "Experiência"
@@ -36,6 +39,96 @@
       "teaching2": "ensinar o básico para novos programadores",
       "teaching3": "me lembra por que me apaixonei por programação desde o início.",
       "teaching4": "Estou sempre disposto a aprender algo novo ou encarar um desafio interessante!"
+    },
+    "experience": {
+    "title": "Experiência",
+    "job1": {
+      "type": "Remoto",
+      "level": "Sênior",
+      "companyName": "Marvee - Financeiro por Assinatura",
+      "role": "Tech Lead",
+      "duration": "2024 — Presente",
+      "description": {
+        "1": "Liderou uma equipe multifuncional de 4 desenvolvedores enquanto mantinha responsabilidades de desenvolvimento prático.",
+        "2": "Liderou a implementação de integrações bancárias robustas e manteve independentemente o aplicativo móvel.",
+        "3": "Orquestrou operações diárias incluindo planejamento de sprint, revisões de código e tomada de decisões técnicas enquanto colaborava com o CTO em iniciativas estratégicas.",
+        "keyContributions": {
+            "1": "Gerenciou a eficiência da equipe através da implementação do ClickUp e cerimônias ágeis",
+            "2": "Arquitetou e implementou sistemas seguros de integração bancária",
+            "3": "Desenvolveu, lançou e manteve aplicativo móvel"
+        }
+      }
+    },
+    "job2": {
+      "type": "Remoto",
+      "level": "Pleno",
+      "companyName": "Marvee - Financeiro por Assinatura",
+      "role": "Engenheiro de Software Full Stack",
+      "duration": "2023 — 2024",
+      "description": {
+        "1": "Liderou o redesign e modernização completa da plataforma principal da empresa, transformando um MVP de prova de conceito em uma solução SaaS escalável.",
+        "2": "Conduziu a migração bem-sucedida de clientes existentes enquanto implementava práticas modernas de desenvolvimento e melhorias de infraestrutura.",
+        "keyContributions": {
+            "1": "Reconstruiu recursos principais da plataforma com foco em manutenibilidade e escalabilidade",
+            "2": "Escalou a capacidade do sistema de 100 para mais de 500 usuários sem tempo de inatividade",
+            "3": "Implementou pipelines de CI/CD para garantir implantações confiáveis",
+            "4": "Transformou com sucesso a plataforma interna em um produto SaaS voltado para o cliente"
+        }
+      }
+    },
+    "job3": {
+        "type": "Remoto",
+        "level": "Pleno",
+        "companyName": "SCI - Sistemas Contábeis Integrados",
+        "role": "Engenheiro de Software Full Stack",
+        "duration": "2022 — 2023",
+        "description": {
+            "1": "Liderou o desenvolvimento e manutenção de múltiplos sistemas interconectados incluindo plataforma backoffice, portal para clientes e aplicativo móvel para gestão de propriedades.",
+            "2": "Mentorou 30 estagiários enquanto gerenciava recursos críticos do produto e soluções centradas no cliente.",
+            "keyContributions": {
+                "1": "Liderou o desenvolvimento de recursos de gestão de propriedades incluindo agendamento de espaços, gestão de documentos e sistemas de notificação",
+                "2": "Gerenciou o desenvolvimento paralelo de plataformas web e aplicativo móvel",
+                "3": "Estruturou e ministrou programa de treinamento técnico com 97% de taxa de sucesso",
+                "4": "Desenvolveu abordagem de resolução de problemas focada no cliente, priorizando valor para o usuário final nas decisões técnicas",
+                "5": "Criou currículo baseado em recursos padrão da indústria como FreeCodeCamp, MDN, roadmap.sh",
+                "6": "Guiou estagiários através da jornada de desenvolvimento full-stack desde fundamentos de programação até aplicações CRUD completas usando PHP e JavaScript"
+            }
+        }
+    },
+    "job4": {
+        "type": "Remoto",
+        "level": "Júnior",
+        "companyName": "SCI - Sistemas Contábeis Integrados",
+        "role": "Desenvolvedor Full Stack",
+        "duration": "2021 — 2022",
+        "description": {
+            "1": "Desempenhou papel fundamental no setor de inovação, desenvolvendo soluções de nova geração para gestão jurídica e de propriedades.",
+            "2": "Liderou o desenvolvimento de um sistema jurídico em conformidade com a LGPD com foco em segurança e proteção de dados.",
+            "3": "Expandiu expertise técnica para desenvolvimento móvel enquanto construía uma solução abrangente de gestão de propriedades.",
+            "keyContributions": {
+                "1": "Desenvolveu um sistema abrangente de gestão de propriedades",
+                "2": "Liderou o desenvolvimento de um sistema jurídico seguro",
+                "3": "Arquitetou e lançou um MVP de sistema jurídico seguro com criptografia e hash avançados"
+            }
+        }
+    },
+    "job5": {
+        "type": "Híbrido",
+        "level": "Júnior",
+        "companyName": "SCI - Sistemas Contábeis Integrados",
+        "role": "Desenvolvedor Full Stack",
+        "duration": "2020 — 2021",
+        "description": {
+            "1": "Contribuiu para manutenção e aprimoramento de um sistema de intranet abrangente com 15 anos de idade servindo funções críticas de negócio.",
+            "2": "Ganhou extensa experiência trabalhando em vários módulos de um sistema empresarial maduro.",
+            "keyContributions": {
+                "1": "Manteve e aprimorou múltiplos módulos do sistema desde comunicação com funcionários até relatórios para clientes",
+                "2": "Desenvolveu soluções tanto para operações internas quanto para relatórios voltados ao cliente",
+                "3": "Colaborou dentro de uma pequena equipe de alto desempenho em aplicações críticas para o negócio",
+                "4": "Adquiriu rapidamente proficiência em manutenção e aprimoramento de sistema legado"
+            }
+        }
     }
+}
   }
   

@@ -1,4 +1,7 @@
 {
+    "general": {
+        "keyContributions": "Key Contributions"
+    },
     "header": {
     "name": "Matheus Carvalho",
     "role": "Software Engineer",
@@ -36,5 +39,95 @@
     "teaching2": "teaching basics to newcomers",
     "teaching3": "reminds me why I fell in love with programming in the first place.",
     "teaching4": "Always up for learning something new or tackling an interesting challenge!"
+  },
+  "experience": {
+    "title": "Experience",
+    "job1": {
+      "type": "Remote",
+      "level": "Senior",
+      "companyName": "Marvee - Financial BPO",
+      "role": "Tech Lead",
+      "duration": "2024 — Present",
+      "description": {
+        "1": "Led a cross-functional team of 4 developers while maintaining hands-on development responsibilities.",
+        "2": "Spearheaded the implementation of robust banking integrations and independently maintained the mobile application.",
+        "3": "Orchestrated daily operations including sprint planning, code reviews, and technical decision-making while collaborating with CTO on strategic initiatives.",
+        "keyContributions": {
+            "1": "Managed team efficiency through ClickUp implementation and agile ceremonies",
+            "2": "Architected and implemented secure banking integration systems",
+            "3": "Developed, launched and maintained mobile application"
+        }
+      }
+    },
+    "job2": {
+      "type": "Remote",
+      "level": "Mid",
+      "companyName": "Marvee - Financial BPO",
+      "role": "Full Stack Software Engineer",
+      "duration": "2023 — 2024",
+      "description": {
+        "1": "Spearheaded the complete redesign and modernization of the company's core platform, transforming a proof-of-concept MVP into a scalable SaaS solution.",
+        "2": "Led the successful migration of existing customers while implementing modern development practices and infrastructure improvements.",
+        "keyContributions": {
+            "1": "Rebuilt core platform features with focus on maintainability and scalability",
+            "2": "Scaled system capacity from 100 to 500+ users with zero downtime",
+            "3": "Implemented CI/CD pipelines to ensure reliable deployments",
+            "4": "Successfully transformed internal platform into a customer-facing SaaS product"
+        }
+      }
+    },
+    "job3": {
+        "type": "Remote",
+        "level": "Mid",
+        "companyName": "SCI - Integrated Accounting Systems",
+        "role": "Full Stack Software Engineer",
+        "duration": "2022 — 2023",
+        "description": {
+            "1": "Led development and maintenance of multiple interconnected systems including backoffice platform, customer-facing portal, and mobile application for property management.",
+            "2": "Mentored 30 interns while managing critical product features and customer-centric solutions.",
+            "keyContributions": {
+                "1": "Led development of property management features including space scheduling, document management, and notification systems",
+                "2": "Managed parallel development of web platforms and mobile application",
+                "3": "Structured and delivered technical training program with 97% success rate",
+                "4": "Developed customer-focused problem-solving approach, prioritizing end-user value in technical decisions",
+                "5": "Created curriculum based on industry-standard resources like FreeCodeCamp, MDN, roadmap.sh",
+                "6": "Led interns through full-stack development journey from programming basics to complete CRUD applications using PHP and JavaScript"
+            }
+        }
+    },
+    "job4": {
+        "type": "Remote",
+        "level": "Junior",
+        "companyName": "SCI - Integrated Accounting Systems",
+        "role": "Full Stack Developer",
+        "duration": "2021 — 2022",
+        "description": {
+            "1": "Played a key role in the innovation sector, developing new-generation legal and property management solutions.",
+            "2": "Led development of a LGPD-compliant legal system with focus on security and data protection.",
+            "3": "Expanded technical expertise into mobile development while building a comprehensive property management solution.",
+            "keyContributions": {
+                "1": "Developed a comprehensive property management system",
+                "2": "Spearheaded development of a secure legal system",
+                "3": "Architected and launched a secure legal system MVP with advanced encryption and hashing"
+            }
+        }
+    },
+    "job5": {
+        "type": "Hybrid",
+        "level": "Junior",
+        "companyName": "Sofisa - Software e Serviços",
+        "role": "Full Stack Developer",
+        "duration": "2020 — 2021",
+        "description": {
+            "1": "Contributed to maintaining and enhancing a comprehensive 15-year-old intranet system serving critical business functions.",
+            "2": "Gained extensive experience working across various modules of a mature enterprise system.",
+            "keyContributions": {
+                "1": "Maintained and enhanced multiple system modules from employee communication to customer reporting",
+                "2": "Developed solutions for both internal operations and customer-facing reporting",
+                "3": "Collaborated within a small, high-performance team on business-critical applications",
+                "4": "Rapidly acquired proficiency in legacy system maintenance and enhancement"
+            }
+        }
+    }
   }
 }
