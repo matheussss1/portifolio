@@ -1,3 +1,4 @@
+import React from "react";
 import { ArrowUpRight } from "./icon-arrow-up-right";
 
 export function JobCard(props: {
@@ -8,6 +9,7 @@ export function JobCard(props: {
   type: "Remote" | "Onsite" | "Hybrid";
   level: "Intern" | "Junior" | "Mid" | "Senior";
   companyIcon: React.ReactNode;
+  description: React.ReactNode;
 }) {
   return (
     <div className="flex gap-6 rounded-md">
@@ -34,11 +36,7 @@ export function JobCard(props: {
             </div>
           </div>
         </div>
-        <p className="text-sm leading-relaxed">
-          As a backend developer at Mr. Healer, I worked on their Node.js-based
-          systems, ensuring smooth operation and efficiency. Recently, I led the
-          development of a new Laravel-based backend infrastructure.
-        </p>
+        <div className="text-sm leading-relaxed">{props.description}</div>
         <div className="flex flex-wrap gap-2 pt-2">
           {props.stack.map((tech) => (
             <Badge children={tech} key={tech} />
