@@ -63,7 +63,7 @@ export default function Home() {
           </a>
         </nav>
       </header>
-      <main className="flex flex-col flex-1 lg:py-8 gap-12 min-h-96">
+      <main className="flex flex-col flex-1 lg:py-8 pb-20 gap-12 min-h-96">
         <div id="about">
           <h2 className="text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
             About
@@ -232,39 +232,8 @@ export default function Home() {
                 "PostgreSQL",
                 "Redis",
                 "CI/CD",
-                "",
               ]}
             />
-            {/* 
-            <JobCard
-              type="Remote"
-              role="Full Stack Developer"
-              level="Mid"
-              companyName="Freelance"
-              duration="2022 — 2022"
-              companyIcon={
-                <Image
-                  src="/freelance.webp"
-                  alt="freelance"
-                  width={58}
-                  height={58}
-                  loading="lazy"
-                  className="h-full w-full block"
-                />
-              }
-              stack={[
-                "JavaScript",
-                "NodeJs",
-                "ExpressJS",
-                "React",
-                "Next.js",
-                "PHP",
-                "Laravel",
-                "MySQL",
-                "Deployment",
-              ]}
-              description={}
-            /> */}
             <JobCard
               description={
                 <>
