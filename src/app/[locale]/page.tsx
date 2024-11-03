@@ -16,7 +16,7 @@ export default function Home() {
     return (
         <div className="flex flex-col lg:max-w-screen-xl lg:mx-auto lg:flex-row ">
             <header className="flex flex-col py-8 pb-12 gap-12 flex-1 lg:h-svh lg:sticky lg:top-0 px-4">
-                <div className="flex flex-col gap-12">
+                <div className="flex flex-col gap-6">
                     <Image
                         loading="lazy"
                         src="/profile.webp"
