@@ -30,7 +30,12 @@ export default function Home() {
                         <h2 className="text-xl font-medium">Software Engineer</h2>
 
                     </div>
-                    <ChangeLocale />
+                    <div className="flex flex-col gap-2">
+                        <span className="text-sm text-gray-400">
+                            {t("header.changeLocale")}
+                        </span>
+                        <ChangeLocale />
+                    </div>
                     <div className="flex flex-col gap-6">
                         <div className="flex gap-4 mt-4 items-center">
                             <a

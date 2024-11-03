@@ -11,7 +11,9 @@ export function ChangeLocale() {
     }
 
     return (
-        <select className="bg-transparent w-fit" onChange={(e) => changeLocale(e.target.value)} value={pathname.split("/")[1]}>
+        <select className="bg-transparent w-fit"
+            aria-label="Change language"
+            onChange={(e) => changeLocale(e.target.value)} value={pathname.split("/")[1]}>
             <option value="en">🇺🇸 English</option>
             <option value="br">🇧🇷 Português</option>
         </select>

@@ -5,6 +5,7 @@
     "header": {
     "name": "Matheus Carvalho",
     "role": "Software Engineer",
+    "changeLocale": "Change language",
     "buyMeCoffee": "Buy me a coffee",
     "nav": {
       "about": "About",
