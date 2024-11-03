@@ -33,6 +33,6 @@ body {
   min-height: 100svh;
 }
 
-*{
-  -webkit-appearance: menulist;
+select {
+    background: rgba(0, 0, 0, 0.005);
 }
