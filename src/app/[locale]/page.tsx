@@ -37,7 +37,7 @@ export default function Home() {
                         <ChangeLocale />
                     </div>
                     <div className="flex flex-col gap-6">
-                        <div className="flex gap-4 mt-4 items-center">
+                        <div className="flex gap-4 mt-2 items-center">
                             <a
                                 href="https://www.linkedin.com/in/matheus-f-carvalho/"
                                 target="_blank"
