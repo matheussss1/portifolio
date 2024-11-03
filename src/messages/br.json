@@ -1,1 +1,41 @@
-{}
+{
+    "header": {
+      "name": "Matheus Carvalho",
+      "role": "Engenheiro de Software",
+      "buyMeCoffee": "Me compre um café",
+      "nav": {
+        "about": "Sobre",
+        "experience": "Experiência"
+      }
+    },
+    "about": {
+      "title": "Sobre",
+      "intro": "Olá! Eu sou Matheus Carvalho",
+      "passion": "- um líder técnico que encontrou sua paixão em",
+      "passion2": "transformar sistemas desatualizados em soluções modernas e escaláveis.",
+      "description": "Minha jornada na programação começou com experimentos autodidatas, mas rapidamente evoluiu para algo maior do que eu imaginava.",
+      "technologies": "Hoje em dia, orquestro uma combinação de {react}, {nodejs} e {cloud} para construir",
+      "technologiesCloudTech": "tecnologias de nuvem",
+      "technologies2": "sistemas que realmente fazem a diferença.",
+      "proudest": "Meu maior orgulho?",
+      "achievement1": "Liderar a",
+      "achievement2": "transformação na Marvee",
+      "achievement3": ", onde transformamos uma ferramenta interna básica em uma plataforma bancária robusta",
+      "impact": "que atende centenas de usuários",
+      "impact2": ". Nada supera a sensação de ver seu código tornando",
+      "passion3": "a vida profissional das pessoas mais fácil!",
+      "personal": "Sou aquele desenvolvedor que se entusiasma tanto em",
+      "skills": "{craftingClean} {frontend} {experiencesAndOptimizing} {backend} {performance}",
+      "skillsCraftingClean": "criar experiências incríveis no",
+      "skillsExperiencesAndOptimizing": "quanto em otimizar a performance do",
+      "skillsFrontend": "frontend",
+      "skillsBackend": "backend.",
+      "skillsPerformance": "",
+      "devops": "DevOps? Pode contar comigo! Adoro o quebra-cabeça de fazer com que as aplicações não apenas funcionem, mas prosperem em escala.",
+      "teaching": "Quando não estou imerso em código, você pode me encontrar compartilhando conhecimento com desenvolvedores iniciantes - ",
+      "teaching2": "ensinar o básico para novos programadores",
+      "teaching3": "me lembra por que me apaixonei por programação desde o início.",
+      "teaching4": "Estou sempre disposto a aprender algo novo ou encarar um desafio interessante!"
+    }
+  }
+  

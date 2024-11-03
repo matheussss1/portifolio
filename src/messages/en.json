@@ -1,1 +1,40 @@
-{}
+{
+    "header": {
+    "name": "Matheus Carvalho",
+    "role": "Software Engineer",
+    "buyMeCoffee": "Buy me a coffee",
+    "nav": {
+      "about": "About",
+      "experience": "Experience"
+    }
+  },
+  "about": {
+    "title": "About",
+    "intro": "Hi there! I'm Matheus Carvalho",
+    "passion": "- a tech lead who found his passion in",
+    "passion2": "turning outdated systems into modern, scalable solutions.",
+    "description": "My coding journey started with self-taught experiments, but quickly evolved into something bigger than I imagined.",
+    "technologies": "These days, I orchestrate a mix of {react}, {nodejs}, and {cloud} to build",
+    "technologiesCloudTech": "cloud technologies",
+    "technologies2": "systems that actually make a difference.",
+    "proudest": "My proudest achievement?",
+    "achievement1": "Leading the",
+    "achievement2": "transformation at Marvee",
+    "achievement3": ", where we turned a basic internal tool into a robust banking platform",
+    "impact": "serving hundreds of users",
+    "impact2": ". Nothing beats the feeling of seeing your code making",
+    "passion3": "people's work lives easier!",
+    "personal": "I'm that developer who gets excited about both",
+    "skills": "{craftingClean} {frontend} {experiencesAndOptimizing} {backend} {performance}",
+    "skillsCraftingClean": "crafting clean",
+    "skillsExperiencesAndOptimizing": "experiences and optimizing",
+    "skillsFrontend": "frontend",
+    "skillsBackend": "backend",
+    "skillsPerformance": "performance.",
+    "devops": "DevOps? Count me in! I love the whole puzzle of making applications not just work, but thrive at scale.",
+    "teaching": "When I'm not deep in code, you might find me sharing knowledge with aspiring developers - ",
+    "teaching2": "teaching basics to newcomers",
+    "teaching3": "reminds me why I fell in love with programming in the first place.",
+    "teaching4": "Always up for learning something new or tackling an interesting challenge!"
+  }
+}
