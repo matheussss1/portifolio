@@ -1,3 +1,4 @@
+import { ChangeLocale } from "@/components/change-locale";
 import { IconGithub } from "@/components/icon-github";
 import { IconLinkedin } from "@/components/icon-linkedin";
 
@@ -9,6 +10,8 @@ export const runtime = 'edge';
 
 export default function Home() {
     const t = useTranslations();
+
+
 
     return (
         <div className="flex flex-col lg:max-w-screen-xl lg:mx-auto lg:flex-row ">
@@ -25,8 +28,10 @@ export default function Home() {
                     <div className="flex flex-col gap-1">
                         <h1 className="text-4xl font-semibold">Matheus Carvalho</h1>
                         <h2 className="text-xl font-medium">Software Engineer</h2>
+
                     </div>
-                    <div className="flex flex-col gap-3">
+                    <ChangeLocale />
+                    <div className="flex flex-col gap-6">
                         <div className="flex gap-4 mt-4 items-center">
                             <a
                                 href="https://www.linkedin.com/in/matheus-f-carvalho/"
@@ -67,7 +72,7 @@ export default function Home() {
                         {t("header.nav.experience")}
                     </a>
                 </nav>
-            </header>
+            </header >
             <main className="flex flex-col flex-1 lg:py-8 pb-20 gap-12 min-h-96">
                 <div id="about">
                     <h2 className="text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
@@ -371,6 +376,6 @@ export default function Home() {
                 </div>
             </main>
             <footer></footer>
-        </div>
+        </div >
     );
 }
