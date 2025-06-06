@@ -12,6 +12,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'accent-purple-vibrant': 'var(--accent-purple-vibrant)',
+        'accent-purple-pastel': 'var(--accent-purple-pastel)',
+        'accent-purple-deep': 'var(--accent-purple-deep)',
+        'accent-purple-interactive': 'var(--accent-purple-interactive)',
       },
     },
   },

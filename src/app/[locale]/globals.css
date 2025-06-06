@@ -5,13 +5,20 @@
 :root {
   --gradient-x: 300px;
   --gradient-y: 150px;
-  --background: #0f0f0f;
+  --background: #0f0f0f; /* Deep black */
+  /* Adjusted gradient to incorporate a deep purple, giving a subtle cosmic/futuristic feel */
   --background-gradient: radial-gradient(
-    900px at var(--gradient-x) var(--gradient-y),
-    rgba(58, 58, 59, 0.5),
-    transparent 80%
+    1000px at var(--gradient-x) var(--gradient-y),
+    rgba(75, 0, 130, 0.3), /* Indigo with some transparency */
+    var(--background) 70% /* Transition to the solid background color */
   );
-  --foreground: #ededed;
+  --foreground: #ededed; /* Light gray for text */
+
+  /* New purple accent colors */
+  --accent-purple-vibrant: #8A2BE2; /* BlueViolet - for strong highlights, CTAs */
+  --accent-purple-pastel: #C3B1E1; /* A softer, more ethereal purple */
+  --accent-purple-deep: #4B0082;   /* Indigo - for darker purple elements or backgrounds */
+  --accent-purple-interactive: #9370DB; /* MediumPurple - for interactive elements like links on hover */
 }
 
 * {
@@ -37,12 +44,13 @@ select {
     background: rgba(0, 0, 0, 0.005);
 }
 
+/* Styles for dropdown, ensure they are visible against dark backgrounds */
 label.dropdown select {
 	padding: 10px 42px 10px 10px;
-	background: transparent;
-	color: white;
+	background: rgba(25, 25, 25, 0.7); /* Darker background for better visibility */
+	color: var(--foreground); /* Use main foreground color */
 	border-radius: 0;
-    border: 1px solid rgb(109, 112, 118);
+    border: 1px solid var(--accent-purple-interactive); /* Use an accent purple for border */
     border-radius: 5px;
 	display: inline-block;
 	-webkit-appearance: none;
@@ -51,9 +59,13 @@ label.dropdown select {
 	cursor: pointer;
 	outline: none;
 }
+label.dropdown select:focus {
+    border-color: var(--accent-purple-vibrant); /* Brighter purple on focus */
+    box-shadow: 0 0 5px var(--accent-purple-vibrant);
+}
 label.dropdown select:-moz-focusring {
 	color: transparent;
-	text-shadow: 0 0 0 white;
+	text-shadow: 0 0 0 var(--foreground);
 }
 label.dropdown select::-ms-expand {
 	display: none;
@@ -63,7 +75,7 @@ label.dropdown { position: relative; }
 label.dropdown:after {
 	content: '▼';
 	font: 8px Consolas, monospace;
-	color: white;
+	color: var(--accent-purple-pastel); /* Lighter purple for the arrow */
 	right: 3px;
 	top: 18px;
 	position: absolute;

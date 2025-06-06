@@ -12,17 +12,17 @@ export function JobCard(props: {
     description: React.ReactNode;
 }) {
     return (
-        <div className="flex gap-6 rounded-md">
+        <div className="flex gap-6 rounded-md bg-accent-purple-deep/20 p-4 job-card-animate border-2 border-transparent"> {/* Added 'job-card-animate' and border */}
             <div className="flex-grow space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                    <div className="grid place-content-center h-16 w-16 sm:h-12 sm:w-12 rounded-lg overflow-hidden bg-muted dark:bg-gray-900 shrink-0">
+                    <div className="grid place-content-center h-16 w-16 sm:h-12 sm:w-12 rounded-lg overflow-hidden bg-accent-purple-deep/30 shrink-0">
                         {props.companyIcon}
                     </div>
                     <div className="space-y-1">
-                        <h3 className="font-semibold text-lg dark:text-white">
+                        <h3 className="font-semibold text-lg dark:text-foreground">
                             {props.companyName}
                         </h3>
-                        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground dark:text-gray-400">
+                        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground dark:text-gray-300">
                             <span>{props.duration}</span>
                             <span className="hidden sm:inline">•</span>
                             <div className="flex items-center gap-1">
@@ -31,7 +31,7 @@ export function JobCard(props: {
                                 {props.level}
                                 <span>•</span>
                                 {props.type}
-                                <ArrowUpRight />
+                                <ArrowUpRight /> {/* Should now inherit dark:text-gray-300 */}
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ export function JobCard(props: {
 }
 
 const Badge = ({ children }: { children: React.ReactNode }) => (
-    <span className="inline-flex items-center px-2 py-1 text-xs font-medium rounded-md bg-primary/10 text-primary transition-colors hover:bg-primary/20">
+    <span className="inline-flex items-center px-2 py-1 text-xs font-medium rounded-md bg-accent-purple-interactive/20 text-accent-purple-pastel transition-colors hover:bg-accent-purple-interactive/30">
         {children}
     </span>
 );

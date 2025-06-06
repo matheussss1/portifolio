@@ -1,15 +1,67 @@
 import { ChangeLocale } from "@/components/change-locale";
 import { IconGithub } from "@/components/icon-github";
 import { IconLinkedin } from "@/components/icon-linkedin";
+// import Hero3D from '@/components/hero-3d'; // Original import replaced by dynamic import
+import dynamic from 'next/dynamic';
 
 import { JobCard } from "@/components/job-card";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export const runtime = 'edge';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect } from 'react';
+
+// export const runtime = 'edge'; // Commented out as it may conflict with GSAP client-side animations
+
+const Hero3D = dynamic(() => import('@/components/hero-3d'), {
+    ssr: false, // Typically, 3D components are client-side only
+    loading: () => <div style={{ height: '400px', width: '100%' }} className='rounded-lg bg-accent-purple-deep/10 animate-pulse' /> // Placeholder during load
+});
 
 export default function Home() {
     const t = useTranslations();
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate job cards on scroll
+        gsap.utils.toArray('.job-card-animate').forEach((card: any) => {
+            // Scroll-triggered animation
+            gsap.fromTo(card,
+                { autoAlpha: 0, y: 50 },
+                {
+                    autoAlpha: 1,
+                    y: 0,
+                    duration: 0.8,
+                    ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: card,
+                        start: 'top bottom-=100', // Start animation when card is 100px from bottom of viewport
+                        toggleActions: 'play none none none', // Play animation once when it enters
+                        once: true // Ensure animation only runs once
+                    }
+                }
+            );
+
+            // Hover animation
+            const hoverAnimation = gsap.to(card, {
+                scale: 1.03,
+                borderColor: 'var(--accent-purple-vibrant)',
+                duration: 0.3,
+                ease: 'power2.out',
+                paused: true
+            });
+
+            card.addEventListener('mouseenter', () => hoverAnimation.play());
+            card.addEventListener('mouseleave', () => hoverAnimation.reverse());
+        });
+
+        // Cleanup ScrollTrigger instances on component unmount
+        return () => {
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        };
+    }, []); // Empty dependency array ensures this runs once on mount
 
 
 
@@ -42,24 +94,24 @@ export default function Home() {
                                 href="https://www.linkedin.com/in/matheus-f-carvalho/"
                                 target="_blank"
                                 aria-label="Linkedin"
-                                className="size-8"
+                                className="size-8 text-accent-purple-pastel hover:text-accent-purple-vibrant"
                             >
-                                <IconLinkedin />
+                                <IconLinkedin className="fill-current" />
                             </a>
                             <a
                                 href="https://github.com/matheussss1"
                                 aria-label="Github"
                                 target="_blank"
-                                className="size-8"
+                                className="size-8 text-accent-purple-pastel hover:text-accent-purple-vibrant"
                             >
-                                <IconGithub />
+                                <IconGithub className="fill-current" />
                             </a>
                         </div>
                         <a
                             href="https://www.buymeacoffee.com/matheus.carvalho"
                             target="_blank"
                             aria-label={t("header.buyMeCoffee")}
-                            className="w-max flex items-center gap-2 bg-gray-300/25 px-3 py-1.5 rounded-lg text-md font-semibold"
+                            className="w-max flex items-center gap-2 bg-accent-purple-deep hover:bg-accent-purple-vibrant px-3 py-1.5 rounded-lg text-md font-semibold text-foreground"
                         >
                             <span className="text-xl">☕</span>
                             <span>{t("header.buyMeCoffee")}</span>
@@ -67,28 +119,29 @@ export default function Home() {
                     </div>
                 </div>
                 <nav className="flex-col gap-4 hidden lg:flex">
-                    <a href="#about" className="text-md text-zinc-700 dark:text-zinc-400">
+                    <a href="#about" className="text-md text-accent-purple-pastel hover:text-accent-purple-vibrant">
                         {t("header.nav.about")}
                     </a>
                     <a
                         href="#experience"
-                        className="text-md text-zinc-700 dark:text-zinc-400"
+                        className="text-md text-accent-purple-pastel hover:text-accent-purple-vibrant"
                     >
                         {t("header.nav.experience")}
                     </a>
                 </nav>
             </header >
             <main className="flex flex-col flex-1 lg:py-8 pb-20 gap-12 min-h-96">
+                <Hero3D /> {/* <--- Add the new component here */}
                 <div id="about">
-                    <h2 className="text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
+                    <h2 className="text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4 text-foreground">
                         {t("about.title")}
                     </h2>
-                    <p className="px-4 text-gray-400">
-                        <span className="text-gray-200 font-semibold">
+                    <p className="px-4 text-gray-300"> {/* Adjusted from text-gray-400 for better contrast */}
+                        <span className="text-foreground font-semibold"> {/* Adjusted from text-gray-200 */}
                             {t("about.intro")}
                         </span>{" "}
                         {t("about.passion")}{" "}
-                        <span className="text-gray-200 font-semibold">
+                        <span className="text-foreground font-semibold"> {/* Adjusted from text-gray-200 */}
                             {t("about.passion2")}
                         </span>{" "}
                         {t("about.description")}
@@ -99,52 +152,52 @@ export default function Home() {
                             nodejs: <span key="nodejs" className="text-green-400">Node.js</span> as any,
                             cloud: <span key="cloud" className="text-orange-400">{t("about.technologiesCloudTech")}</span> as any,
                         })}{" "}
-                        <span className="text-gray-200 font-semibold">
+                        <span className="text-foreground font-semibold"> {/* Adjusted from text-gray-200 */}
                             {t("about.technologies2")}
                         </span>
                         <br />
                         <br />
-                        <span className="text-gray-200 font-semibold">
+                        <span className="text-foreground font-semibold"> {/* Adjusted from text-gray-200 */}
                             {t("about.proudest")}
                         </span>{" "}
                         {t("about.achievement1")}{" "}
-                        <span className="text-gray-200 font-semibold">
+                        <span className="text-foreground font-semibold"> {/* Adjusted from text-gray-200 */}
                             {t("about.achievement2")}
                         </span>
                         {t("about.achievement3")}{" "}
-                        <span className="text-gray-200 font-semibold">
+                        <span className="text-foreground font-semibold"> {/* Adjusted from text-gray-200 */}
                             {t("about.impact")}
                         </span>
                         {t("about.impact2")}{" "}
-                        <span className="text-purple-300">
+                        <span className="text-accent-purple-pastel"> {/* Changed from text-purple-300 */}
                             {t("about.passion3")}
                         </span>
                         <br />
                         <br />
                         {t("about.personal")}{" "}
                         {t.rich("about.skills", {
-                            craftingClean: <span key="craftingClean" className="text-white font-semibold">{t("about.skillsCraftingClean")}</span> as any,
-                            experiencesAndOptimizing: <span key="experiencesAndOptimizing" className="text-white font-semibold">{t("about.skillsExperiencesAndOptimizing")}</span> as any,
+                            craftingClean: <span key="craftingClean" className="text-foreground font-semibold">{t("about.skillsCraftingClean")}</span> as any, /* Adjusted from text-white */
+                            experiencesAndOptimizing: <span key="experiencesAndOptimizing" className="text-foreground font-semibold">{t("about.skillsExperiencesAndOptimizing")}</span> as any, /* Adjusted from text-white */
                             frontend: <span key="frontend" className="text-blue-400 font-semibold">{t("about.skillsFrontend")}</span> as any,
                             backend: <span key="backend" className="text-green-400 font-semibold">{t("about.skillsBackend")}</span> as any,
-                            performance: <span key="performance" className="text-white font-semibold">{t("about.skillsPerformance")}</span> as any,
+                            performance: <span key="performance" className="text-foreground font-semibold">{t("about.skillsPerformance")}</span> as any, /* Adjusted from text-white */
                         })}{" "}
                         {t("about.devops")}
                         <br />
                         <br />
                         {t("about.teaching")}{" "}
-                        <span className="text-gray-200 font-semibold">
+                        <span className="text-foreground font-semibold"> {/* Adjusted from text-gray-200 */}
                             {t("about.teaching2")}
                         </span>{" "}
                         {t("about.teaching3")}{" "}
-                        <span className="text-gray-200 font-semibold">
+                        <span className="text-foreground font-semibold"> {/* Adjusted from text-gray-200 */}
                             {t("about.teaching4")}
                         </span>
                     </p>
                 </div>
-                <hr className="border-gray-300 dark:border-gray-400/35 w-1/2 mx-auto hidden lg:block" />
+                <hr className="border-accent-purple-deep/50 w-1/2 mx-auto hidden lg:block" />
                 <div id="experience">
-                    <h2 className="text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4">
+                    <h2 className="text-md uppercase tracking-widest font-semibold py-4 sticky backdrop-blur lg:sr-only top-0 px-4 text-foreground">
                         {t("experience.title")}
                     </h2>
                     <div className="flex flex-col gap-12 px-4">
@@ -163,7 +216,7 @@ export default function Home() {
                                     {t("experience.job1.description.3")}
                                     <br />
                                     <br />
-                                    <strong className="text-white">{t("general.keyContributions")}: </strong>
+                                    <strong className="text-foreground">{t("general.keyContributions")}: </strong> {/* Adjusted from text-white */}
                                     <ul>
                                         <li>
                                             - {t("experience.job1.description.keyContributions.1")}
@@ -200,7 +253,8 @@ export default function Home() {
                                     {t("experience.job2.description.2")}
                                     <br />
                                     <br />
-                                    <strong className="text-white">{t("general.keyContributions")}:</strong>
+                                    <strong className="text-foreground">{t("general.keyContributions")}:</strong> {/* Adjusted from text-white */}
+                                    <strong className="text-foreground">{t("general.keyContributions")}:</strong> {/* Adjusted from text-white */}
                                     <ul>
                                         <li>
                                             - {t("experience.job2.description.keyContributions.1")}
@@ -309,7 +363,8 @@ export default function Home() {
                                     {t("experience.job4.description.3")}
                                     <br />
                                     <br />
-                                    <strong>{t("general.keyContributions")}:</strong>
+                                    <strong className="text-foreground">{t("general.keyContributions")}:</strong> {/* Adjusted from text-white, and added strong for consistency */}
+                                    <strong className="text-foreground">{t("general.keyContributions")}:</strong> {/* Adjusted from text-white, and added strong for consistency */}
                                     <ul>
                                         <li>
                                             - {t("experience.job4.description.keyContributions.1")}

@@ -4,7 +4,7 @@ export function ArrowUpRight() {
       className="w-5"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      fill="#87abed"
+      fill="currentColor"
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
@@ -22,14 +22,14 @@ export function ArrowUpRight() {
                 fill="none"
                 id="Right-2"
                 points="18.7 12.4 18.7 5.3 11.6 5.3"
-                stroke="#87abed"
+                stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
               ></polyline>
               <line
                 fill="none"
-                stroke="#87abed"
+                stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
